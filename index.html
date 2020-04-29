@@ -10,26 +10,58 @@
 
 <body>
    <header>
-      <!-- <nav class="nav">
+      <div class="container">
+         <!-- <nav class="nav">
          <ul>
             <li class="nav__item">openspace</li>
             <li class="nav__item">from home</li>
          </ul>
       </nav> -->
+      </div>
+
    </header>
 
-   <div class="popup">
+   <!-- <div class="popup">
       <div class="popup__container">
          <p class="popup__text">Привет, меня зовут Sun. Я был создан для того, чтоб помочь выбрать тебе день для отдыха
             на свежем воздухе :)</p>
          <button class="popup__close">&times;</button>
-         <div class="popup__counter-holder"><span class="popup__counter">1</span>/3</div>
+         <div class="popup__counter-holder">
+            <span class="popup__counter">1</span>/<span class="quantity-pages">3</span>
+         </div>
          <div class="popup__arrows">
             <button class="popup__back popup-arrow">&larr;</button>
             <button class="popup__next popup-arrow arrow_active">&rarr;</button>
          </div>
       </div>
-   </div>
+   </div> -->
+
+   <main>
+
+
+      <section class="card-info">
+         <div class="container">
+            <h1>some title</h1>
+            <div class="card">
+               <h3 class="card__city">city</h3>
+               <div class="card__temperature">
+                  <span class="temperature-value">10</span>&deg;
+               </div>
+               <div class="card__precipitation">it's raining</div>
+               <div class="card__wind">13 ms</div>
+            </div>
+         </div>
+      </section>
+
+      <section class="new-cards">
+         <div class="container">
+            <div class="new-card card">
+               <div class="new-card__plus">+</div>
+            </div>
+         </div>
+      </section>
+
+   </main>
 
    <script src="js/app.js"></script>
 </body>
