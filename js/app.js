@@ -1,4 +1,4 @@
-
+// === poppup ===
 
 let popup = {
    p: document.querySelector('.popup__text'),
@@ -7,7 +7,6 @@ let popup = {
       'Для того, чтоб я мог помочь тебе, прошу ответить на пару вопросов',
       'ты можешь выбрать найти свой город или выбрать из шорт-листа'
    ],
-   isActive: [[0, 1], [1, 1][1, 0]],
    currentPage: 0,
    buttonNext: document.querySelector('.popup__next'),
    buttonBack: document.querySelector('.popup__back'),
@@ -19,13 +18,6 @@ let popup = {
 
       popup.p.textContent = popup.text[popup.currentPage];
       document.querySelector('.popup__counter').textContent = popup.currentPage + 1;
-
-      // if (popup.isActive[popup.currentPage][0] && popup.currentPage <= popup.isActive.length) {
-      //    popup.buttonBack.classList.add('arrow_active');
-      //    console.log(1);
-      // } else {
-      //    popup.buttonBack.classList.remove('arrow_acive');
-      // }
 
       if (popup.currentPage === popup.text.length - 1)
          popup.buttonNext.classList.remove('arrow_active');
@@ -56,29 +48,10 @@ let popup = {
    }
 }
 
+document.querySelector('.quantity-pages').textContent = popup.text.length;
+
 popup.buttonNext.onclick = popup.toNextPage;
 popup.buttonBack.onclick = popup.toEarlyPage;
 popup.closeButton.onclick = popup.toClose;
 
-// .popup.bac
-
-// i = 0;
-// document.querySelector('.popup__next').onclick = () => {
-//    if (i < popup.text.length - 1)
-//       i++;
-
-//    document.querySelector('.popup__text').textContent = popup.text[i];
-// }
-
-// if (popup.isActive[i][0]) {
-//    document.querySelector('.popup__next').classList.add('active');
-// } else {
-//    document.querySelector('.popup__next').classList.remove('active');
-// }
-
-// document.querySelector('.popup__back').onclick = () => {
-//    if (i > 0)
-//       i--;
-
-//    document.querySelector('.popup__text').textContent = popup.text[i];
-// }
+// 
