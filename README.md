@@ -1,2 +1,2 @@
 # weather
-project to practice JS
+Demo for practicing custom popups and Fetch API
